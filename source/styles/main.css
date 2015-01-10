@@ -1,0 +1,194 @@
+/*****************
+* {
+    outline: red 1px solid;
+}
+****************/
+
+
+/******************
+**** Common
+*******************/
+*:focus
+{
+    outline: none;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+/******************
+**** Header
+*******************/
+#headerArea {
+    width: 300px;
+    top: 5px;
+    margin: 0 auto;
+}
+
+#headerArea h1   {
+    font-size: 30pt;
+    color: white;
+    display: inline;
+    vertical-align: middle;
+}
+#headerArea img    {
+    height: 10%;
+    width: 10%;
+    display: inline;
+}
+
+/******************
+**** Background
+*******************/
+#imgArea {
+
+     width: 100%;
+     height: 100%;
+
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left:0;
+     right: 0;
+     z-index: -10;
+
+     background-image: url("../images/vegetable-section-store-small.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+/*  Containers */
+#appArea
+{
+    margin-top: 2px;
+}
+
+
+/***************************
+* Slide out menu
+****************************/
+
+#innerArea {
+    color:black;
+}
+
+#menuContainer  {
+    color: white;
+}
+
+#menuHeader {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#menuOptions {
+    color: white;
+    margin-left: 20px;
+}
+
+
+#optionsList {
+    list-style: circle;
+    color: white;
+}
+
+#optionsList li {
+    color: white;
+}
+
+.optionsSelectable {
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    /* All browsers except webkit*/
+    transform: scale(1.5);
+
+    /* Webkit browsers*/
+    -webkit-transform: scale(1.5);
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*
+Shopping and Purchased List items
+*/
+.item {
+
+    width: 100%;
+    font-size: 15pt;
+
+    /* Colors and Styles */
+    list-style: none;
+    color:black;
+
+    /* background-color: #2BA6CB;  */
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: white;
+}
+
+#shoppingList {
+    margin-left: 0;
+    border: 1px solid lightgrey;
+}
+
+#purchasedList {
+    margin-left: 0;
+    border: 1px solid lightgrey;
+}
+
+.done {
+
+   color: darkgrey;
+
+}
+
+
+li span {
+    margin-left: 10px;
+}
+
+#listContainer li:nth-child(odd) {
+    background-color: #DEDEDE;
+}
+
+#listContainer li:nth-child(odd):hover {
+    background-color: white;
+}
+
+
+.delete {
+    width: 5%;
+    height: 100%;
+    float: left;
+    background-size: 55%;
+    background-position: center;
+    background-image: url("../images/x-2x.png") ;
+    background-repeat: no-repeat;
+}
+
+.delete:hover {
+    background-color: rosybrown;
+}
+
+
+/******************
+**** Footer
+*******************/
+#footerArea {
+
+    color: white;
+    background-color: darkgray;
+}
+
+
+
+
